@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nlp-todo</title>
+
+<!--    &lt;!&ndash; update the version number as needed &ndash;&gt;-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-app-compat.js"></script>-->
+<!--    &lt;!&ndash; include only the Firebase features as you need &ndash;&gt;-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-auth-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-database-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-firestore-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-functions-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-messaging-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-storage-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-analytics-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-remote-config-compat.js"></script>-->
+<!--    <script defer src="/__/firebase/9.1.0/firebase-performance-compat.js"></script>-->
+<!--    &lt;!&ndash; -->
+<!--      initialize the SDK after all desired features are loaded, set useEmulator to false-->
+<!--      to avoid connecting the SDK to running emulators.-->
+<!--    &ndash;&gt;-->
+<!--    <script defer src="/__/firebase/init.js?useEmulator=true"></script>-->
+<!--starter code-->
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div id="hero" class="hero">
+      <h1 class="title">To Do List</h1>
+      <div id="todoApp" class="todo-app">
+        <div id="todoMenu1" class="todo-menu-1">
+          <button id="toggleAll" class="toggle-all" aria-label="Toggle all to do tasks">
+            <span class="rotate">&#x276F;</span>
+          </button>
+          <input id="addTodoTextInput" class="add-todo-text-input" type="text" placeholder="What do you need to do?" aria-label="Enter to do text" autofocus>
+        </div>
+        <ul id="todos" class="todos" aria-label="List of to do tasks"></ul>
+        <div id="todoMenu2" class="todo-menu-2">
+          <label id="todosLeft" class="todos-left" aria-label="Number of to do tasks left to complete"></label>
+          <div id="todoMenu2Buttons" class="todo-menu-2-buttons">
+            <button id="showAllTodos" class="menu-2-button active" aria-label="Show all to do tasks">All</button>
+            <button id="showUncompletedTodos" class="menu-2-button" aria-label="Show active to do tasks">Active</button>
+            <button id="showCompletedTodos" class="menu-2-button" aria-label="Show completed to do tasks">Completed</button>
+          </div>
+          <button id="deleteCompletedButton" class="delete-completed-button" aria-label="Clear completed to do tasks">Clear completed</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
